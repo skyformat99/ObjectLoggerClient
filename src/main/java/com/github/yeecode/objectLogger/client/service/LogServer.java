@@ -6,9 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class LogServer {
-    /**
-     * 解析对象
-     */
+
     public ActionModel resolveActionModel(String actionModelJson) {
         return JSON.parseObject(actionModelJson, ActionModel.class);
     }

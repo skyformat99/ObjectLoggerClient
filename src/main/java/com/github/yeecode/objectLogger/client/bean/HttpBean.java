@@ -34,15 +34,7 @@ public class HttpBean {
         }
     }
 
-    /**
-     * 发送HttpPost请求
-     *
-     * @param strURL
-     *            服务地址
-     * @param params
-     *
-     * @return 成功:返回json字符串<br/>
-     */
+
     private String jsonPost(String strURL, Map<String, String> params) {
         try {
             URL url = new URL(strURL);// 创建连接

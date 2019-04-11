@@ -66,7 +66,7 @@ public class Html2Text extends HTMLEditorKit.ParserCallback {
 
     @Override
     public void handleSimpleTag(HTML.Tag t, MutableAttributeSet a, int pos) {
-        // 对<img>特殊处理
+        // deal with <img>
         if (HTML.Tag.IMG.equals(t)) {
             stringBuilder.append("【【-START_IMG-】】 " + a.toString() + "【【-END_IMG-】】");
         }
